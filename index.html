@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My Web Page</title>
+</head>
+
+<body>
+    <h1>Welcome to My Web Page</h1>
+    <p>This is a sample paragraph to demonstrate a basic HTML structure.</p>
+
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "bf5bd1de-50e4-4afe-8425-efc5fffe469b", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "0157dbeb-3e2a-4116-9582-d946ad51a3e1", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function () {
+            const t = document.createElement('script');
+            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+        });
+    </script>
+
+</body>
+
+</html>
