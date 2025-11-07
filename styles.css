@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-navy: #001E44;
+  --color-blue: #1E407C;
+  --color-lightBlue: #96BEE6;
+  --color-white: #FFFFFF;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+.navContainer {
+  background-color: var(--color-navy);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+#logoShield {
+  width: 48px;
+}
+.logoContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 16px;
+}
+
+.heroContainer {
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#heroImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+.bodyContainer {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  align-items: left;
+  align-self: center;
+
+  padding: 40px;
+  gap: 16px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  overflow: hidden;
+  border: 2px solid var(--color-navy);
+  border-radius: 24px;
+}
+.card > p, .card > h3 {
+  padding: 8px;
+}

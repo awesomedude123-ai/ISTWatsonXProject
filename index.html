@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <title>My Web Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penn State Advising</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Welcome to My Web Page</h1>
-    <p>This is a sample paragraph to demonstrate a basic HTML structure.</p>
+    <header>
+        <nav>
+            <div class="navContainer">
+                <div class="logoContainer">
+                    <img id="logoShield" src="assets/penn-state-shield.jpg" alt="Penn State Shield Logo">
+                    <img id="logoText" src="assets/logotype.svg" alt="Penn State Text Logo">
+                </div>
+                <!-- <img src="https://brand.psu.edu/images/backgrounds/horizontal-mark-registered-symbol.png"> -->
+                <div class="navLinks">
+                    <a href="https://www.registrar.psu.edu/registration/registration-timetable.cfm">Registration Timetable</a>
+                    <a href="https://www.registrar.psu.edu/degree-planning/">Degree Planning</a>
+                    <a href="https://advising.psu.edu/how-advise">How to Advise</a>
+                    <a href="https://advising.psu.edu/policies-and-procedures">Policies and Procedures</a>
+                    <a href="https://advising.psu.edu/essential-resources">Essential Resources</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="heroContainer">
+        <img id="heroImage" src="assets/pexels-linkedin-1251861.jpg" alt="Student leaving a building">
+    </div>
+    <div class="bodyContainer">
+        <h1>Welcome to Penn State Advising</h1>
+        <p>Learn about the resources available to get the most of our college experience.</p>
+
+        <div class="cardContainer">
+            <div class="card">
+                <img src="assets/pexels-anastasiya-gepp-654466-1462630.jpg" alt="Student holding folder">
+                <h3>Resources for Students</h3>
+                <p>Learn more about how you can schedule a meeting with an academic adviser.</p>
+            </div>
+            <div class="card">
+                <img src="assets/pexels-divinetechygirl-1181372.jpg" alt="Person looking at laptop and two people looking over his shoulder at the scren">
+                <h3>Resources for Advisers</h3>
+                <p>Learn more about the specific policies and procedures for advising students.</p>
+            </div>
+        </div>
+    </div>
 
     <script>
         window.watsonAssistantChatOptions = {
@@ -21,7 +63,5 @@
             document.head.appendChild(t);
         });
     </script>
-
 </body>
-
 </html>
